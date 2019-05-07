@@ -2,6 +2,7 @@ package service
 
 import model._
 import org.scalatest.FunSuite
+import service.adminservice.ItemService
 
 
 class ItemServiceTest extends FunSuite {

@@ -1,5 +1,5 @@
 package model
 
-case class Item(name:String,quantity:Int) {
+case class Item(name:String,price:Int,quantity:Int){
 
 }

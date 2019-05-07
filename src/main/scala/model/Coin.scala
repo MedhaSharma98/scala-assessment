@@ -1,5 +1,5 @@
 package model
 
-case class Coin(number:Int,quantity:Int) extends Money{
+case class Coin(number:Int,value:Int,quantity:Int) extends Money{
 
 }

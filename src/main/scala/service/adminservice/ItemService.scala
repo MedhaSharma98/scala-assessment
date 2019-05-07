@@ -1,4 +1,5 @@
-package service
+package service.adminservice
+
 import model._
 
 class ItemService extends ManageItem {
@@ -17,8 +18,8 @@ class ItemService extends ManageItem {
     case _=>0
   }
 
-  override def removeCoin(userType: UserType, coin: Int): Int = userType match {
-    case Admin=>Database.coinList-=Database.coinList.filter(p=> p.number == coin).head; 1
+  override def removeCoin(userType: UserType, coinNo: Int): Int = userType match {
+    case Admin=>Database.coinList-=Database.coinList.filter(p=> p.number == coinNo).head; 1
     case _=>0
   }
 
