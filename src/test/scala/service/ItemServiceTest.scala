@@ -10,18 +10,18 @@ class ItemServiceTest extends FunSuite {
 
 
   test("testAddNewCoin") {
-    assert(itemService.addNewCoin(Admin, Coin(1,5))==1)
+    assert(itemService.addNewCoin(Admin, Coin(1,1,5))==1)
   }
 
   test("testAddNewItem") {
-  assert(itemService.addNewItem(Admin, Item("Chips",5))==1)
-    assert(itemService.addNewItem(Admin, Item("Nuts",5))==1)
-    assert(itemService.addNewItem(Admin, Item("Candies",5))==1)
+  assert(itemService.addNewItem(Admin, Item("Chips",10,5))==1)
+    assert(itemService.addNewItem(Admin, Item("Nuts",20,5))==1)
+    assert(itemService.addNewItem(Admin, Item("Candies",1,5))==1)
 
   }
 
   test("testAddNewNote") {
-    assert(itemService.addNewNote(Admin, Note(10,5))==1)
+    assert(itemService.addNewNote(Admin, Note(10,10,5))==1)
   }
 
   test("testRemoveItem") {
